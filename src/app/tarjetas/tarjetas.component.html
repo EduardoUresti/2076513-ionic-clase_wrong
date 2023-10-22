@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Tarjeta digital</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let tarjeta of tarjetas">
+    <ion-card-header>
+      {{ tarjeta.numero }}
+    </ion-card-header>
+    <ion-card-content>
+      <p>Fecha de Validez: {{ tarjeta.fechaValidez }}</p>
+      <p>CVV: {{ '***' }}</p>
+      <p>Apellido: {{ tarjeta.apellido }}</p>
+      <p>Nombre: {{ tarjeta.nombre }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
